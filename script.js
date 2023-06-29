@@ -13,6 +13,8 @@ function getProfile() {
             <span id="OutData">Nome: </span>${data.name}<br>
             <span id="OutData">Nickname: </span> ${data.login}<br>
             <span id="OutData">Quantidade de repositorios:</span> ${data.public_repos}<br>
+            <span id="OutData">Seguidores: </span> ${data.followers}<br>
+            <span id="OutData">Seguindo: </span> ${data.following}<br><span id="OutData">Repositorio Link: </span> ${data.html_url+'/?tab=repositories'}<br>
 
           `;
         }
