@@ -9,8 +9,11 @@ function getProfile() {
           profile.innerHTML = "No profile";
         } else {
           profile.innerHTML = `
-            <img src="${data.avatar_url}"><br> Nome: ${data.name}<br>
-           
+            <img src="${data.avatar_url}"><br> 
+            <span id="OutData">Nome: </span>${data.name}<br>
+            <span id="OutData">Nickname: </span> ${data.login}<br>
+            <span id="OutData">Quantidade de repositorios:</span> ${data.public_repos}<br>
+
           `;
         }
       });
